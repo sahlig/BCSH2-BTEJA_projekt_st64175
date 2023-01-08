@@ -7,13 +7,14 @@
              xmlns:viewModel = "clr-namespace:BCSH2_BTEJA.ViewModel"
              mc:Ignorable="d" Height="477" Width="210">
     <Grid>
-        <ListView d:ItemsSource="{Binding Messages, UpdateSourceTrigger=PropertyChanged}" Background="#FFFFB9B9">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-
+        <ListBox ItemsSource="{Binding Messages}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </UserControl>

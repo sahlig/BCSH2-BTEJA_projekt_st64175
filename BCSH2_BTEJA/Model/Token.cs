@@ -42,14 +42,28 @@ namespace BCSH2_BTEJA.Model
         tok_rightbrack,
     }
 
-    public class Token
+    public class Token : INotifyPropertyChanged
     {
         private TokenType tokType;
         private string value;
 
-        public TokenType TokType { get; set; }
+        public event PropertyChangedEventHandler? PropertyChanged;
 
-        public string? Value { get; set; }
+        public TokenType TokType
+        {
+            get { return tokType; }
+            set { tokType = value;
+                RaisePropertyChanged("TokType");
+            }
+        }
+
+        public string? Value
+        {
+            get { return value; }
+            set { this.value = value;
+            RaisePropertyChanged("Value");
+            }
+        }
 
         public Token(TokenType tokType)
         {
@@ -60,6 +74,14 @@ namespace BCSH2_BTEJA.Model
         {
             TokType = tokType;
             Value = value;
+        }
+
+        private void RaisePropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
         }
 
         public override string ToString()
