@@ -7,7 +7,7 @@
              xmlns:viewModel = "clr-namespace:BCSH2_BTEJA.ViewModel"
              mc:Ignorable="d" Height="477" Width="210">
     <Grid>
-        <ListView d:ItemsSource="{Binding Messages}" Background="#FFFFB9B9">
+        <ListView d:ItemsSource="{Binding Messages, UpdateSourceTrigger=PropertyChanged}" Background="#FFFFB9B9">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>

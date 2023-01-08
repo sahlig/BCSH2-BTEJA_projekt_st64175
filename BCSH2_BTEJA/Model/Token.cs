@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,7 +44,11 @@ namespace BCSH2_BTEJA.Model
 
     public class Token
     {
+        private TokenType tokType;
+        private string value;
+
         public TokenType TokType { get; set; }
+
         public string? Value { get; set; }
 
         public Token(TokenType tokType)

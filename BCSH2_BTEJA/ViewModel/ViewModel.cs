@@ -27,7 +27,7 @@ namespace BCSH2_BTEJA.ViewModel
         {
             get { return this.tokens; }
             set { this.tokens = value;
-                RaisePropertyChanged("TokenList");
+                RaisePropertyChanged("Tokens");
                 }
         }
         public ObservableCollection<string> Messages
@@ -125,10 +125,16 @@ namespace BCSH2_BTEJA.ViewModel
 
         private void Start()
         {
-            Tokens = null;
-            Tokens = Lexing();
-            Parsing();
-            Running(Output);
+            try
+            {
+                Tokens = null;
+                Tokens = Lexing();
+                Parsing();
+                Running(Output);
+            }catch (Exception ex)
+            {
+                Messages.Add(ex.Message);
+            }
         }
 
         private void OnStart()

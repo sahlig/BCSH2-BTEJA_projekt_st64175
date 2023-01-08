@@ -23,6 +23,7 @@ namespace BCSH2_BTEJA.View
         public TokenView()
         {
             InitializeComponent();
+            this.DataContext = new BCSH2_BTEJA.ViewModel.ViewModel();
         }
     }
 }
