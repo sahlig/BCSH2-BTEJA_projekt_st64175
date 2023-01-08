@@ -19,3 +19,12 @@ C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debu
 C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\BCSH2_BTEJA.pdb
 C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\BCSH2_BTEJA.genruntimeconfig.cache
 C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\ref\BCSH2_BTEJA.dll
+C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\View\TokenView.g.cs
+C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\View\TokenView.baml
+C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\View\MessageView.g.cs
+C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\View\MessageView.baml
+C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\View\OutputView.g.cs
+C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\View\OutputView.baml
+C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\InputDialog.g.cs
+C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\obj\Debug\net6.0-windows\InputDialog.baml

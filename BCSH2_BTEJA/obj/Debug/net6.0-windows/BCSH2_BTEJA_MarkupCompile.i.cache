@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Radek\Documents\GitHub\BCSH2-BTEJA_projekt_st64175\BCSH2_BTEJA\App.xaml
-11407045341
+5-308197217
 
-5-1317016960
+32-1644590988
 1941645785384
-MainWindow.xaml;
+InputDialog.xaml;MainWindow.xaml;View\MessageView.xaml;View\OutputView.xaml;View\TokenView.xaml;
 
 False
 

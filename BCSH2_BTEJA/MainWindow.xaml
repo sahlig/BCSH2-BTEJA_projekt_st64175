@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BCSH2_BTEJA"
+        xmlns:views="clr-namespace:BCSH2_BTEJA.View"
+        xmlns:viewModel = "clr-namespace:BCSH2_BTEJA.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="709" Width="1067">
     <Grid>
@@ -13,14 +15,14 @@
             <ColumnDefinition Width="377*"/>
             <ColumnDefinition Width="522*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="148,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="509" Width="118" Grid.Column="2"><Run Text="Startuji lexer"/><LineBreak/><Run Text="Lexer hotov"/><LineBreak/><Run Text="Startuji parser"/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Margin="241,-59,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Margin="10,173,0,0" TextWrapping="Wrap" Text="var spiderman = function (person) {&#xD;&#xA;    return 'Hello, ' + person;&#xD;&#xA;};&#xD;&#xA;var user = 'Peter Parker';&#xD;&#xA;console.log(spiderman(user));" VerticalAlignment="Top" Width="301" Background="Black" Foreground="White" Height="509" Grid.ColumnSpan="3"/>
-        <TextBlock HorizontalAlignment="Left" Margin="266,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="509" Width="223" Grid.ColumnSpan="2" Grid.Column="2"><Run Text="Token Var"/><LineBreak/><Run Text="Token Identified, Value = spiderman"/><LineBreak/><Run Text="Token Equals"/><LineBreak/><Run Text="Token LeftBracket"/><LineBreak/><Run Text="Token Identifier, Value = person"/><LineBreak/><Run Text="Token RightBracket"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="117,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="509" Width="396" Background="#FF99F7A3" Grid.Column="3"><Run Text="V"/><Run Language="cs-cz" Text="ýsledek interpretu"/></TextBlock>
-        <Button Grid.Column="1" Content="Nahrát soubor" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="34" Width="131"/>
-        <Button Grid.Column="3" Content="Uložit do souboru" HorizontalAlignment="Left" Margin="344,26,0,0" VerticalAlignment="Top" Height="34" Width="131"/>
-        <Button Grid.Column="2" Content="Start" HorizontalAlignment="Left" Margin="266,43,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="56" Width="158"/>
+        <TextBox x:Name="TextView" HorizontalAlignment="Left" Margin="10,173,0,0" TextWrapping="Wrap" Text="{Binding Input, Mode =TwoWay}" VerticalAlignment="Top" Width="301" Background="Black" Foreground="White" Height="509" Grid.ColumnSpan="3"/>
+        <Button x:Name="LoadButton" Grid.Column="1" Content="Nahrát soubor" Command="{Binding LoadCommand}" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="34" Width="131"/>
+        <Button x:Name="SaveButton" Grid.Column="1" Content="Uložit do souboru" Command="{Binding SaveCommand}" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Height="34" Width="131" Grid.ColumnSpan="2"/>
+        <Button x:Name="StartButton" Grid.Column="2" Content="Start" Command="{Binding StartCommand}" HorizontalAlignment="Left" Margin="266,43,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="56" Width="158"/>
+        <views:TokenView x:Name = "TokenViewControl" Grid.Column="2" Margin="363,159,348,11" Grid.ColumnSpan="2"/>
+        <ComboBox HorizontalAlignment="Left" Margin="-160,516,0,0" VerticalAlignment="Top" Width="120"/>
+        <views:MessageView x:Name = "MessageViewControl" Grid.Column="2" Margin="148,189,19,27"/>
+        <views:OutputView x:Name = "OutputViewControl" Grid.Column="3" Margin="197,185,28,36"/>
 
     </Grid>
 </Window>

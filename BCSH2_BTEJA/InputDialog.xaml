@@ -1,0 +1,14 @@
+﻿<Window x:Class="BCSH2_BTEJA.InputDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BCSH2_BTEJA"
+        mc:Ignorable="d"
+        Title="InputDialog" Height="191" Width="298">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Name="ReturnTextBox" Margin="74,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <Button IsDefault="True" Content="Ok" Click="ReturnInput" HorizontalAlignment="Left" Margin="136,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.455,0.585"/>
+
+    </Grid>
+</Window>

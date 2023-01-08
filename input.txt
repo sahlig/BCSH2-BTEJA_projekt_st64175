@@ -1,0 +1,28 @@
+var age: integer = 32;
+var name: string = "John";
+var namea: string;
+var nameb: string;
+var neco: double = 566,112;
+var i: integer = 12;
+
+var x: integer;
+
+if(age >= 30){
+age = 20;
+}
+
+function foob(alfa: integer, beta: string) : integer {
+var ageb: double = 12,12;
+var str: integer = 42;
+scan(str);
+
+str = 20 + alfa;
+
+return str;
+}
+
+i = foob(100, "Hello");
+
+x = i;
+
+print(x);

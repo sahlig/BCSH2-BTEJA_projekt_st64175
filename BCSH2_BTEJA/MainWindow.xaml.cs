@@ -23,6 +23,7 @@ namespace BCSH2_BTEJA
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new BCSH2_BTEJA.ViewModel.ViewModel();
         }
     }
 }
